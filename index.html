@@ -3,73 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio Mahasiswa</title>
+  <title>Portofolio Ngasiroh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="foto.jpg" alt="Foto Profil" class="profil-img">
-    <h1>NGASIROH NURJAYATRI</h1>
+    <div class="header-left">
+      <img src="foto.jpg" alt="Foto Profil" class="profil-img">
+    </div>
+    <div class="header-right">
+      <h1>Ngasiroh Nurjayatri</h1>
+      <p>Mahasiswa S1 Ilmu Komputer 2022</p>
+      <p>Universitas Lampung</p>
+    </div>
   </header>
 
-  <nav class="nav-buttons">
-    <button onclick="showDashboard()">Dashboard</button>
-    <button onclick="showSection('tugas')">Tugas</button>
-    <button onclick="showSection('kuis')">Kuis</button>
+  <nav>
+    <ul class="tabs">
+      <li onclick="showSection('tugas')">Tugas</li>
+      <li onclick="showSection('kuis')">Kuis</li>
+    </ul>
   </nav>
 
   <main>
-    <!-- DASHBOARD SECTION -->
-    <section id="dashboard" class="content-section">
-      <p class="deskripsi">Saya Mahasiswa S1 Ilmu Komputer tahun 2022, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Lampung</p>
-      <p class="kode">225705046 - ILKOM22</p>
-    </section>
-
     <!-- TUGAS SECTION -->
     <section id="tugas" class="content-section">
       <h2>Kumpulan Tugas</h2>
-      <ul>
-        <li><strong>Tugas 1:</strong> <a href="https://youtu.be/dbWfiSn_ePE?si=PQTFWFvydY0aZ24z" target="_blank">Lihat Video</a></li>
-        <li><strong>Tugas 2:</strong> <a href="assets/tugas2.pdf" target="_blank">Unduh PDF</a></li>
-        <li><strong>Tugas 3:</strong> <a href="assets/tugas3.pdf" target="_blank">Unduh PDF</a></li>
-        <li><strong>Tugas 4:</strong> <a href="assets/tugas4.pdf" target="_blank">Unduh PDF</a></li>
-      </ul>
+      <div class="list-vertical">
+        <div class="item"><strong>Tugas 1:</strong><br><a href="https://youtu.be/dbWfiSn_ePE" target="_blank">Video</a></div>
+        <div class="item"><strong>Tugas 2:</strong><br><a href="assets/tugas2.pdf" target="_blank">PDF</a></div>
+        <div class="item"><strong>Tugas 3:</strong><br><a href="assets/tugas3.pdf" target="_blank">PDF</a></div>
+        <div class="item"><strong>Tugas 4:</strong><br><a href="assets/tugas4.pdf" target="_blank">PDF</a></div>
+      </div>
     </section>
 
     <!-- KUIS SECTION -->
     <section id="kuis" class="content-section">
       <h2>Kumpulan Kuis</h2>
-      <ul>
-        <li><strong>Kuis 1:</strong> <a href="https://youtu.be/8TyP19KkyfM?si=9Sk0Qq9YEC_YBKV0" target="_blank">Lihat Video</a></li>
-        <li><strong>Kuis 2:</strong> <a href="https://youtu.be/-Buj2CnC6Cg?si=VzWctGN_WEagtahu" target="_blank">Lihat Video</a></li>
-        <li><strong>Kuis 3:</strong> <a href="https://youtu.be/UuEn90REFS8?si=0hwaA3OdswkcRio8" target="_blank">Lihat Video</a></li>
-        <li><strong>Kuis 4:</strong> <a href="https://youtu.be/FkJkzaxmXGg?si=jh7zAI9LiUoRh5Ep" target="_blank">Lihat Video</a></li>
-      </ul>
+      <div class="list-vertical">
+        <div class="item"><strong>Kuis 1:</strong><br><a href="https://youtu.be/8TyP19KkyfM" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 2:</strong><br><a href="https://youtu.be/-Buj2CnC6Cg" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 3:</strong><br><a href="https://youtu.be/UuEn90REFS8" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 4:</strong><br><a href="https://youtu.be/FkJkzaxmXGg" target="_blank">Video</a></div>
+      </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <p class="copyright">&copy; 2025 Ngasiroh Nurjayatri</p>
+    <p>&copy; 2025 Ngasiroh Nurjayatri</p>
   </footer>
 
   <script>
     function showSection(id) {
-      document.getElementById('dashboard').style.display = 'none';
-      document.getElementById('tugas').style.display = 'none';
-      document.getElementById('kuis').style.display = 'none';
+      document.querySelectorAll('.content-section').forEach(el => el.style.display = 'none');
       document.getElementById(id).style.display = 'block';
     }
 
-    function showDashboard() {
-      document.getElementById('dashboard').style.display = 'block';
-      document.getElementById('tugas').style.display = 'none';
-      document.getElementById('kuis').style.display = 'none';
-    }
-
-    // Default: hanya tampilkan dashboard saat pertama kali load
+    // Default tampilkan tugas
     window.onload = function () {
-      showDashboard();
+      showSection('tugas');
     };
   </script>
 </body>
