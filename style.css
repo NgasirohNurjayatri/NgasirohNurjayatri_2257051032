@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #FAF3E0;
-  color: #5D4037;
+  background: #FDFBD4; 
+  color: #4E342E;
 }
 
 header {
   display: flex;
   align-items: center;
-  background: #F5F5DC;
+  background: #FDFBD4;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -22,24 +22,24 @@ header {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #E6D3B3;
+  border: 3px solid #E0DDAC; 
 }
 
 .header-right h1 {
   margin: 0;
   font-size: 22px;
-  color: #4E342E;
+  color: #3E2723;
 }
 
 .header-right p {
   margin: 3px 0;
   font-size: 14px;
-  color: #6D4C41;
+  color: #5D4037;
 }
 
 /* === NAVIGATION === */
 nav {
-  background-color: #F0E6D2; 
+  background-color: #F5F3C6; 
 }
 
 .tabs {
@@ -56,14 +56,14 @@ nav {
   padding: 10px 20px;
   margin: 0 5px;
   border-radius: 20px;
-  border: 1px solid #D7CCC8;
+  border: 1px solid #E0DDAC;
   cursor: pointer;
   transition: background 0.3s;
   font-size: 14px;
 }
 
 .tabs li:hover {
-  background-color: #f8f1e5;
+  background-color: #fffbdc;
 }
 
 main {
@@ -96,11 +96,11 @@ h2 {
 }
 
 .item:hover {
-  background: #f5f0e7;
+  background: #fffbdc;
 }
 
 a {
-  color: #8D6E63;
+  color: #6D4C41;
   text-decoration: none;
   font-weight: bold;
 }
@@ -111,7 +111,7 @@ a:hover {
 
 footer {
   text-align: center;
-  background: #F5F5DC;
+  background: #FDFBD4;
   padding: 15px;
   font-size: 13px;
   color: #4E342E;
