@@ -1,16 +1,16 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #EFEBE9; 
-  color: #4E342E;       
+  background: #FAF3E0;
+  color: #5D4037;
 }
 
 header {
   display: flex;
   align-items: center;
-  background: #D7CCC8; 
+  background: #F5F5DC;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .header-left {
@@ -22,23 +22,24 @@ header {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #BCAAA4;
+  border: 3px solid #E6D3B3;
 }
 
 .header-right h1 {
   margin: 0;
   font-size: 22px;
-  color: #3E2723;
+  color: #4E342E;
 }
 
 .header-right p {
   margin: 3px 0;
   font-size: 14px;
-  color: #5D4037;
+  color: #6D4C41;
 }
 
+/* === NAVIGATION === */
 nav {
-  background-color: #BCAAA4;
+  background-color: #F0E6D2; 
 }
 
 .tabs {
@@ -55,17 +56,16 @@ nav {
   padding: 10px 20px;
   margin: 0 5px;
   border-radius: 20px;
-  border: 1px solid #A1887F;
+  border: 1px solid #D7CCC8;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
   font-size: 14px;
 }
 
 .tabs li:hover {
-  background-color: #D7CCC8;
+  background-color: #f8f1e5;
 }
 
-/* ===== MAIN ===== */
 main {
   max-width: 960px;
   margin: 30px auto;
@@ -76,7 +76,7 @@ h2 {
   font-size: 20px;
   color: #5D4037;
   margin-bottom: 20px;
-  border-bottom: 1px solid #BCAAA4;
+  border-bottom: 1px solid #D7CCC8;
   padding-bottom: 5px;
 }
 
@@ -87,21 +87,20 @@ h2 {
 }
 
 .item {
-  background: #FFFFFF;
-  border-left: 5px solid #A1887F;
+  background: #fffefb;
+  border-left: 5px solid #D7CCC8;
   padding: 15px 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   transition: background 0.2s;
 }
 
 .item:hover {
-  background: #F5F5F5;
+  background: #f5f0e7;
 }
 
-/* ===== LINK STYLING ===== */
 a {
-  color: #6D4C41;
+  color: #8D6E63;
   text-decoration: none;
   font-weight: bold;
 }
@@ -112,10 +111,10 @@ a:hover {
 
 footer {
   text-align: center;
-  background: #D7CCC8;
+  background: #F5F5DC;
   padding: 15px;
   font-size: 13px;
-  color: #3E2723;
+  color: #4E342E;
   margin-top: 50px;
 }
 
