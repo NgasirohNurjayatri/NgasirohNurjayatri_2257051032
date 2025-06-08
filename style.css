@@ -1,112 +1,130 @@
-/* Body dan keseluruhan */
+/* ===== RESET DASAR ===== */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fffde7; /* kuning muda */
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: #EFEBE9; /* coklat muda lembut */
+  color: #4E342E;       /* teks coklat gelap */
 }
 
-/* Gambar profil */
-.profil-img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Header */
+/* ===== HEADER ===== */
 header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: #ffd54f; /* kuning cerah */
-  color: #333;
-  padding: 20px 0;
-  text-align: center;
+  background: #D7CCC8; /* coklat muda */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Navigasi Tabs */
-nav ul.tabs {
+.header-left {
+  margin-right: 20px;
+}
+
+.profil-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #BCAAA4;
+}
+
+.header-right h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #3E2723;
+}
+
+.header-right p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #5D4037;
+}
+
+/* ===== NAVIGATION (TAB BUTTONS) ===== */
+nav {
+  background-color: #BCAAA4;
+}
+
+.tabs {
+  list-style: none;
   display: flex;
   justify-content: center;
-  padding: 0;
-  background-color: #fffde7;
-  list-style: none;
+  padding: 10px 0;
   margin: 0;
-  border-bottom: 1px solid #ddd;
 }
 
-nav ul.tabs li {
-  cursor: pointer;
+.tabs li {
+  background: #ffffff;
+  color: #5D4037;
   padding: 10px 20px;
   margin: 0 5px;
-  background-color: #ffee58;
-  border-radius: 5px 5px 0 0;
-  color: #333;
-  font-weight: bold;
-  user-select: none;
-  transition: background-color 0.3s;
+  border-radius: 20px;
+  border: 1px solid #A1887F;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
-nav ul.tabs li:hover {
-  background-color: #fff176;
+.tabs li:hover {
+  background-color: #D7CCC8;
 }
 
-/* Konten utama */
+/* ===== MAIN ===== */
 main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-/* Heading */
 h2 {
-  color: #333;
-  border-bottom: 2px solid #ddd;
+  font-size: 20px;
+  color: #5D4037;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #BCAAA4;
   padding-bottom: 5px;
 }
 
-/* List vertikal */
+/* ===== LIST TUGAS & KUIS (VERTIKAL) ===== */
 .list-vertical {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .item {
-  background-color: #fff;
-  padding: 10px 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background: #FFFFFF;
+  border-left: 5px solid #A1887F;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: background 0.2s;
 }
 
-/* Link */
+.item:hover {
+  background: #F5F5F5;
+}
+
+/* ===== LINK STYLING ===== */
 a {
-  color: #ff9800; /* oranye terang */
+  color: #6D4C41;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  background-color: #ffd54f;
-  color: #5d4037;
-  margin-top: 90px;
-  font-size: 14px;
   text-align: center;
+  background: #D7CCC8;
+  padding: 15px;
+  font-size: 13px;
+  color: #3E2723;
+  margin-top: 50px;
 }
 
-/* Section konten disembunyikan default */
+/* ===== CONTENT SECTION (DEFAULT HIDDEN) ===== */
 .content-section {
   display: none;
 }
