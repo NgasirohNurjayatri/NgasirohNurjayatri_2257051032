@@ -20,23 +20,16 @@
 
   <nav>
     <ul class="tabs">
-      <li onclick="showDashboard()">Dashboard</li>
       <li onclick="showSection('tugas')">Tugas</li>
       <li onclick="showSection('kuis')">Kuis</li>
     </ul>
   </nav>
 
   <main>
-    <section id="dashboard" class="content-section">
-      <div class="info-box">
-        <p>Saya Mahasiswa S1 Ilmu Komputer tahun 2022, Fakultas MIPA, Universitas Lampung.</p>
-        <p class="kode">225705046 - ILKOM22</p>
-      </div>
-    </section>
-
+    <!-- TUGAS SECTION -->
     <section id="tugas" class="content-section">
       <h2>Kumpulan Tugas</h2>
-      <div class="grid">
+      <div class="list-vertical">
         <div class="item"><strong>Tugas 1:</strong><br><a href="https://youtu.be/dbWfiSn_ePE" target="_blank">Video</a></div>
         <div class="item"><strong>Tugas 2:</strong><br><a href="assets/tugas2.pdf" target="_blank">PDF</a></div>
         <div class="item"><strong>Tugas 3:</strong><br><a href="assets/tugas3.pdf" target="_blank">PDF</a></div>
@@ -44,9 +37,10 @@
       </div>
     </section>
 
+    <!-- KUIS SECTION -->
     <section id="kuis" class="content-section">
       <h2>Kumpulan Kuis</h2>
-      <div class="grid">
+      <div class="list-vertical">
         <div class="item"><strong>Kuis 1:</strong><br><a href="https://youtu.be/8TyP19KkyfM" target="_blank">Video</a></div>
         <div class="item"><strong>Kuis 2:</strong><br><a href="https://youtu.be/-Buj2CnC6Cg" target="_blank">Video</a></div>
         <div class="item"><strong>Kuis 3:</strong><br><a href="https://youtu.be/UuEn90REFS8" target="_blank">Video</a></div>
@@ -64,10 +58,11 @@
       document.querySelectorAll('.content-section').forEach(el => el.style.display = 'none');
       document.getElementById(id).style.display = 'block';
     }
-    function showDashboard() {
-      showSection('dashboard');
-    }
-    window.onload = showDashboard;
+
+    // Default tampilkan tugas
+    window.onload = function () {
+      showSection('tugas');
+    };
   </script>
 </body>
 </html>
