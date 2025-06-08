@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #FDFBD4; 
+  background: #FAF3E0; /* cream lembut */
   color: #4E342E;
 }
 
 header {
   display: flex;
   align-items: center;
-  background: #FDFBD4;
+  background: #FAF3E0; /* header warna sama dengan body */
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
@@ -22,7 +22,7 @@ header {
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #E0DDAC; 
+  border: 3px solid #E6D3B3; /* aksen cream lebih gelap */
 }
 
 .header-right h1 {
@@ -39,7 +39,7 @@ header {
 
 /* === NAVIGATION === */
 nav {
-  background-color: #F5F3C6; 
+  background-color: #F0EAD6; /* cream netral */
 }
 
 .tabs {
@@ -56,14 +56,14 @@ nav {
   padding: 10px 20px;
   margin: 0 5px;
   border-radius: 20px;
-  border: 1px solid #E0DDAC;
+  border: 1px solid #E6D3B3;
   cursor: pointer;
   transition: background 0.3s;
   font-size: 14px;
 }
 
 .tabs li:hover {
-  background-color: #fffbdc;
+  background-color: #f9f5e5; /* hover soft cream */
 }
 
 main {
@@ -88,7 +88,7 @@ h2 {
 
 .item {
   background: #fffefb;
-  border-left: 5px solid #D7CCC8;
+  border-left: 5px solid #E6D3B3;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
@@ -96,7 +96,7 @@ h2 {
 }
 
 .item:hover {
-  background: #fffbdc;
+  background: #f8f1e6; /* hover light cream */
 }
 
 a {
@@ -111,7 +111,7 @@ a:hover {
 
 footer {
   text-align: center;
-  background: #FDFBD4;
+  background: #FAF3E0;
   padding: 15px;
   font-size: 13px;
   color: #4E342E;
