@@ -1,11 +1,13 @@
+/* Body dan keseluruhan */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #FFFDE7; /* kuning muda */
+  background-color: #fffde7; /* kuning muda */
   color: #333;
 }
 
+/* Gambar profil */
 .profil-img {
   width: 220px;
   height: 220px;
@@ -15,62 +17,75 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Header */
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FFD54F; /* kuning cerah */
+  background-color: #ffd54f; /* kuning cerah */
   color: #333;
   padding: 20px 0;
   text-align: center;
 }
 
-.deskripsi {
-  font-size: 16px;
-  margin-top: 5px;
-  color: #4E342E;
-  text-align: center;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+/* Navigasi Tabs */
+nav ul.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #fffde7;
+  list-style: none;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
 }
 
-.kode {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 16px;
+nav ul.tabs li {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #ffee58;
+  border-radius: 5px 5px 0 0;
   color: #333;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.3s;
 }
 
-nav a {
-  margin: 0 15px;
-  color: #333;
-  text-decoration: none;
+nav ul.tabs li:hover {
+  background-color: #fff176;
 }
 
+/* Konten utama */
 main {
   padding: 20px;
   max-width: 800px;
   margin: auto;
 }
 
+/* Heading */
 h2 {
   color: #333;
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* List vertikal */
+.list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-li {
-  margin-bottom: 10px;
+.item {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+/* Link */
 a {
-  color: #FF9800; /* oranye terang */
+  color: #ff9800; /* oranye terang */
   text-decoration: none;
 }
 
@@ -78,46 +93,20 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 10px;
-  background: #FFD54F;
-  color: #333;
+  background-color: #ffd54f;
+  color: #5d4037;
   margin-top: 90px;
-}
-
-footer p {
-  margin: 0;
-  color: #5D4037;
   font-size: 14px;
   text-align: center;
 }
 
+/* Section konten disembunyikan default */
 .content-section {
   display: none;
-}
-
-nav button {
-  background-color: #FFEE58;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-}
-
-nav button:hover {
-  background-color: #FFF176;
-}
-
-.nav-buttons {
-  text-align: center;
-  background-color: #FFFDE7;
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
 }
