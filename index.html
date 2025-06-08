@@ -3,47 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio Mahasiswa</title>
+  <title>Portofolio Ngasiroh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="foto.jpg" alt="Foto Profil" class="profil-img">
-    <h1>NGASIROH NURJAYATRI</h1>
-    <p class="tagline">Mahasiswa Ilmu Komputer | Universitas Lampung</p>
+    <div class="header-left">
+      <img src="foto.jpg" alt="Foto Profil" class="profil-img">
+    </div>
+    <div class="header-right">
+      <h1>Ngasiroh Nurjayatri</h1>
+      <p>Mahasiswa S1 Ilmu Komputer 2022</p>
+      <p>Universitas Lampung</p>
+    </div>
   </header>
 
-  <nav class="nav-buttons">
-    <button onclick="showDashboard()">Dashboard</button>
-    <button onclick="showSection('tugas')">Tugas</button>
-    <button onclick="showSection('kuis')">Kuis</button>
+  <nav>
+    <ul class="tabs">
+      <li onclick="showDashboard()">Dashboard</li>
+      <li onclick="showSection('tugas')">Tugas</li>
+      <li onclick="showSection('kuis')">Kuis</li>
+    </ul>
   </nav>
 
   <main>
     <section id="dashboard" class="content-section">
-      <div class="card">
-        <p>Saya Mahasiswa S1 Ilmu Komputer tahun 2022, Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Lampung.</p>
+      <div class="info-box">
+        <p>Saya Mahasiswa S1 Ilmu Komputer tahun 2022, Fakultas MIPA, Universitas Lampung.</p>
         <p class="kode">225705046 - ILKOM22</p>
       </div>
     </section>
 
     <section id="tugas" class="content-section">
       <h2>Kumpulan Tugas</h2>
-      <div class="card-list">
-        <div class="card"><strong>Tugas 1:</strong><br><a href="https://youtu.be/dbWfiSn_ePE" target="_blank">Lihat Video</a></div>
-        <div class="card"><strong>Tugas 2:</strong><br><a href="assets/tugas2.pdf" target="_blank">Unduh PDF</a></div>
-        <div class="card"><strong>Tugas 3:</strong><br><a href="assets/tugas3.pdf" target="_blank">Unduh PDF</a></div>
-        <div class="card"><strong>Tugas 4:</strong><br><a href="assets/tugas4.pdf" target="_blank">Unduh PDF</a></div>
+      <div class="grid">
+        <div class="item"><strong>Tugas 1:</strong><br><a href="https://youtu.be/dbWfiSn_ePE" target="_blank">Video</a></div>
+        <div class="item"><strong>Tugas 2:</strong><br><a href="assets/tugas2.pdf" target="_blank">PDF</a></div>
+        <div class="item"><strong>Tugas 3:</strong><br><a href="assets/tugas3.pdf" target="_blank">PDF</a></div>
+        <div class="item"><strong>Tugas 4:</strong><br><a href="assets/tugas4.pdf" target="_blank">PDF</a></div>
       </div>
     </section>
 
     <section id="kuis" class="content-section">
       <h2>Kumpulan Kuis</h2>
-      <div class="card-list">
-        <div class="card"><strong>Kuis 1:</strong><br><a href="https://youtu.be/8TyP19KkyfM" target="_blank">Lihat Video</a></div>
-        <div class="card"><strong>Kuis 2:</strong><br><a href="https://youtu.be/-Buj2CnC6Cg" target="_blank">Lihat Video</a></div>
-        <div class="card"><strong>Kuis 3:</strong><br><a href="https://youtu.be/UuEn90REFS8" target="_blank">Lihat Video</a></div>
-        <div class="card"><strong>Kuis 4:</strong><br><a href="https://youtu.be/FkJkzaxmXGg" target="_blank">Lihat Video</a></div>
+      <div class="grid">
+        <div class="item"><strong>Kuis 1:</strong><br><a href="https://youtu.be/8TyP19KkyfM" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 2:</strong><br><a href="https://youtu.be/-Buj2CnC6Cg" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 3:</strong><br><a href="https://youtu.be/UuEn90REFS8" target="_blank">Video</a></div>
+        <div class="item"><strong>Kuis 4:</strong><br><a href="https://youtu.be/FkJkzaxmXGg" target="_blank">Video</a></div>
       </div>
     </section>
   </main>
